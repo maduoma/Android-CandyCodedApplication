@@ -92,7 +92,6 @@ public class MainActivity extends AppCompatActivity {
 
     private void addCandiesToDatabase(Candy[] candies) {
         SQLiteDatabase db = candyDbHelper.getWritableDatabase();
-
         for (Candy candy : candies) {
             ContentValues values = new ContentValues();
             values.put(CandyEntry.COLUMN_NAME_NAME, candy.name);
